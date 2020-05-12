@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #dbdbdb;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_231" data-name="Group 231" transform="translate(-284 -11)">
+    <g id="Group_3" data-name="Group 3" class="cls-1" transform="translate(405 7)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-2" width="24" height="24" transform="translate(-121 4)"/>
+    </g>
+    <path id="Icon_material-history" data-name="Icon material-history" class="cls-3" d="M10.643,4.5a6.858,6.858,0,0,0-6.857,6.857H1.5l2.964,2.964.053.107L7.6,11.357H5.31a5.359,5.359,0,1,1,1.57,3.764L5.8,16.2A6.855,6.855,0,1,0,10.643,4.5ZM9.881,8.31v3.81l3.261,1.935.549-.922-2.667-1.585V8.31Z" transform="translate(286.5 11.5)"/>
+  </g>
+</svg>

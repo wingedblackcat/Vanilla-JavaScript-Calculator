@@ -1,0 +1,145 @@
+/*--------------------------------------------------------------------- */
+/*------------------------------ GENERAL ------------------------------ */
+/*--------------------------------------------------------------------- */
+:root {
+	--dark-mode-background: #000a12;
+	--dark-mode-sections: #2d3036;
+	--dark-mode-font-color: #ffffff;
+	--dark-mode-equals-btn: #2d3036;
+	--dark-mode-action-key: #4b535a;
+	--dark-mode-number-key: #6b6b6b;
+	--dark-mode-button-hover: #a0a0a0;
+	--grid-size: 8px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+}
+body {
+	padding: calc(var(--grid-size));
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--dark-mode-background);
+	color: var(--dark-mode-font-color);
+}
+.calc-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------ REPEATABLE ELEMENTS ------------------------ */
+/*--------------------------------------------------------------------- */
+.btn {
+	color: var(--dark-mode-font-color);
+	border: none;
+	outline: none;
+	font-size: 1em;
+}
+.btn:hover {
+	background-color: var(--dark-mode-button-hover);
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------------- ICONS ------------------------------- */
+/*--------------------------------------------------------------------- */
+.menu-icon {
+	margin-right: 16px;
+}
+.history-icon {
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------------- HEADER ------------------------------ */
+/*--------------------------------------------------------------------- */
+header {
+	padding: calc(var(--grid-size) / 2);
+	height: 32px;
+	background-color: var(--dark-mode-sections);
+	display: flex;
+	align-items: center;
+}
+
+/*--------------------------------------------------------------------- */
+/*-------------------------------- MAIN ------------------------------- */
+/*--------------------------------------------------------------------- */
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------------- SCREEN ------------------------------ */
+/*--------------------------------------------------------------------- */
+.screen {
+	padding: calc(var(--grid-size));
+	text-align: right;
+	height: calc(139px + 10%);
+}
+.current-calc {
+	font-size: 1.3em;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	height: 28px;
+}
+.result {
+	font-size: 2.6em;
+	margin-right: 8px;
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------------- MEMORY ------------------------------ */
+/*--------------------------------------------------------------------- */
+.memory-control-panel {
+	height: 64px;
+	display: flex;
+	margin-bottom: 4px;
+}
+.memory-btn {
+	flex-grow: 1;
+	background-color: var(--dark-mode-background);
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+/*--------------------------------------------------------------------- */
+/*------------------------- CALCULATOR BUTTONS ------------------------ */
+/*--------------------------------------------------------------------- */
+.calc-btns-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.btn-row {
+	display: flex;
+	flex-grow: 1;
+}
+.btn-row button {
+	width: 25%;
+	margin: calc(var(--grid-size) / 4);
+	min-height: 40px;
+}
+.btn-row button:last-child {
+	font-size: 1.4em;
+}
+button.action {
+	background-color: var(--dark-mode-action-key);
+}
+button.number {
+	background-color: var(--dark-mode-number-key);
+}
+button.equals {
+	background-color: var(--dark-mode-equals-btn);
+}

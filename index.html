@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./style/main.css" />
+		<script src="./script/app.js" defer></script>
+		<script src="./script/calc.js"></script>
+		<script src="./script/clear.js"></script>
+		<script src="./script/screen.js"></script>
+	</head>
+	<body>
+		<div class="calc-container">
+			<header>
+				<img class="menu-icon" src="./img/menu-icon.svg" alt="menu icon" />
+				<span>Standard</span>
+				<img class="history-icon" id="history-log" src="./img/history-icon.svg" alt="history icon" />
+			</header>
+			<main>
+				<section class="screen">
+					<div class="current-calc" id="user-input"></div>
+					<div class="result" id="result">0</div>
+				</section>
+				<section class="memory-control-panel">
+					<button class="btn memory-btn" data-type="memory">MC</button>
+					<button class="btn memory-btn" data-type="memory">MR</button>
+					<button class="btn memory-btn" data-type="memory">M+</button>
+					<button class="btn memory-btn" data-type="memory">M-</button>
+					<button class="btn memory-btn" data-type="memory">MS</button>
+					<button class="btn memory-btn" data-type="memory">M^</button>
+				</section>
+				<section class="calc-btns-container">
+					<div class="btn-row">
+						<button class="btn action" data-type="action" value="%">%</button>
+						<button class="btn action" data-type="action" value="CA">C</button>
+						<button class="btn action" data-type="action" value="CE">CE</button>
+						<button class="btn action" data-type="action" value="CL">
+							<!-- fix parent-child event handling -->
+							<img class="erase-icon" src="./img/erase-icon.svg" alt="erase icon" />
+						</button>
+					</div>
+					<div class="btn-row">
+						<button class="btn action" data-type="action" value="mul-inverse">1/x</button>
+						<button class="btn action" data-type="action" value="pow">pow</button>
+						<button class="btn action" data-type="action" value="root">
+							<!-- fix parent-child event handling -->
+							<img class="square-root-icon" src="./img/square-root-icon.svg" alt="square-root icon" />
+						</button>
+						<button class="btn action" data-type="action" value="/">&#247;</button>
+					</div>
+					<div class="btn-row">
+						<button class="btn number" data-type="number" value="7">7</button>
+						<button class="btn number" data-type="number" value="8">8</button>
+						<button class="btn number" data-type="number" value="9">9</button>
+						<button class="btn action" data-type="action" value="*">&#215;</button>
+					</div>
+					<div class="btn-row">
+						<button class="btn number" data-type="number" value="4">4</button>
+						<button class="btn number" data-type="number" value="5">5</button>
+						<button class="btn number" data-type="number" value="6">6</button>
+						<button class="btn action" data-type="action" value="-">&#8211;</button>
+					</div>
+					<div class="btn-row">
+						<button class="btn number" data-type="number" value="1">1</button>
+						<button class="btn number" data-type="number" value="2">2</button>
+						<button class="btn number" data-type="number" value="3">3</button>
+						<button class="btn action" data-type="action" value="+">+</button>
+					</div>
+					<div class="btn-row">
+						<button class="btn action" data-type="action" value="pos-neg">+/-</button>
+						<button class="btn number" data-type="number" value="0">0</button>
+						<button class="btn action" data-type="action" value=".">.</button>
+						<button class="btn action equals" data-type="action" value="equals">=</button>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
