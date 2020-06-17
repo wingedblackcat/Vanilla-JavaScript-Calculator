@@ -16,6 +16,19 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+/*Desktop*/
+@media only screen and (max-width: 300px) {
+	body{
+		background-color: #4b535a;
+	}
+	.calc-container{
+		width: 50%;
+		height: 50%;
+		display: block;
+	}
+}
+
 html,
 body {
 	width: 100%;
