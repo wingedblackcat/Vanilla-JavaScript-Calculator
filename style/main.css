@@ -17,8 +17,6 @@
 	box-sizing: border-box;
 }
 
-
-
 body {
 	width: 100vw;
 	height: 100vh;
@@ -29,13 +27,13 @@ body {
 	background-color: var(--dark-mode-background);
 	color: var(--dark-mode-font-color);
 }
+
 .calc-container {
 	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
-
 
 /*Desktop*/
 @media only screen and (min-width: 800px) {
