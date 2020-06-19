@@ -16,24 +16,43 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-html,
+
 body {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	min-width: 300px;
-}
-body {
 	padding: calc(var(--grid-size));
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: var(--dark-mode-background);
 	color: var(--dark-mode-font-color);
 }
+
 .calc-container {
 	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 800px) {
+	body{
+		background-color: #3d4347;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 610px;
+	}
+	.calc-container{
+		width: 400px;
+		height: 600px ;
+		background-color: var(--dark-mode-background);
+		-webkit-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.4);
+		-moz-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.4);
+		box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.4);
+	}
 }
 
 /*--------------------------------------------------------------------- */
